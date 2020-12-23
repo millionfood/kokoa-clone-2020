@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar_column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+            <!-- wifi Icon -->
+        </div>
+        <div class="status-bar_column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar_column">
+            <span>110%</span>
+            <i class="fas fa-battery-full "></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header_title">Welcome To Kokoa Clone</h1>
+        <p class="welcome-header_text">If you have a Kokoa Accoun, log in with your email or phone number.</p>
+
+    </header> 
+    <form action="html/friends.html" method="GET" id="login-form">
+        <input name="username" type="text"placeholder="email or phone nuber">
+        <input name="password" type="password" placeholder="Passowrd">
+        <input type="submit" value="Log In">
+        <a href="#">Find Kokoa Account or Passoword</a>
+        
+    </form>
+
+    <script src="https://kit.fontawesome.com/7faa484c64.js" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
