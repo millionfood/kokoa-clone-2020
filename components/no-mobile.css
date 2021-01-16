@@ -1,18 +1,53 @@
-#no-mobile {
-  position: absolute;
-  z-index: 99;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--yellow);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 32px;
-  font-weight: 600;
-  top: 0;
-}
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 600px) {
   #no-mobile {
     display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  #no-mobile {
+    background-color: rgb(0, 255, 255);
+    display: flex;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Yusei Magic", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  #no-mobile h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    bottom: -100px;
+    right: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #no-mobile h3 > span {
+    display: block;
+    padding-top: 10px;
+
+    animation: myName 3s linear forwards;
+  }
+
+  @keyframes myName {
+    0% {
+      transform: rotateZ(0) translateY(400px);
+    }
+
+    50% {
+    }
+
+    100% {
+      color: rgb(22, 148, 206);
+      transform: rotateZ(360deg) scale(2);
+    }
   }
 }

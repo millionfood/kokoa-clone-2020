@@ -55,9 +55,10 @@
   }
 }
 .message-row-author {
-  transform: translateX(-300px);
-  animation: fadeinleft 0.8s linear forwards;
+  transform: translateX(-400px);
+  animation: fadeinleft 0.4s linear forwards;
 }
+
 @keyframes fadeinright {
   from {
   }
@@ -66,10 +67,11 @@
   }
 }
 .message-row-own {
-  transform: translateX(150px);
-  animation: fadeinright 0.2s linear forwards;
+  transform: translateX(300px);
+  animation: fadeinright 0.4s linear forwards;
   animation-delay: 0.8s;
 }
+
 .message-row img {
   width: 50px;
   height: 50px;
@@ -121,6 +123,24 @@
 }
 .message-row-own .message-info {
   flex-direction: row-reverse;
+}
+.message-row:nth-child(3) {
+  animation-delay: 2s;
+}
+.message-row:nth-child(4) {
+  animation-delay: 3s;
+}
+.message-row:nth-child(5) {
+  animation-delay: 5s;
+}
+.message-row:nth-child(6) {
+  animation-delay: 6s;
+}
+.message-row:nth-child(7) {
+  animation-delay: 9s;
+}
+.message-row:nth-child(8) {
+  animation-delay: 11s;
 }
 .reply {
   position: fixed;

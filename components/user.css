@@ -1,7 +1,10 @@
 .user-component {
   justify-content: space-between;
-  /* margin-bottom: 20px; */
-  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.user-component-main {
+  box-shadow: 0px 10px 10px rgba(53, 53, 53, 0.25);
+  border-radius: 30px;
 }
 .user-component,
 .user-component-column:first-child {
@@ -13,11 +16,24 @@
   flex-direction: column;
   align-items: flex-end;
 }
+.user-component-column2-music {
+  border: 2px solid rgb(147, 81, 223);
+  border-radius: 25px;
+  padding: 5px 10px;
+  color: black;
+  font-size: 12px;
+}
+.user-component-column2-music span {
+  opacity: 0.7;
+}
+.user-component-column2-music span:last-child {
+  color: rgb(147, 81, 223);
+}
 
 .user-component-avatar {
   width: 70px;
   height: 70px;
-  border-radius: 40%;
+  border-radius: 25px;
   /* margin-left: 10px; */
 }
 
@@ -29,6 +45,7 @@
 .user-component-avatar--sm {
   width: 60px;
   height: 60px;
+  border-radius: 20px;
 }
 .user-compnent-titile {
   /* display: flex;
